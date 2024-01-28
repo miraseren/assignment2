@@ -42,7 +42,7 @@ public abstract class Person implements Payable, Comparable<Person> {
         return id + ". " + name + " " + surname;
     }
     public abstract String getPosition();
-    public String printInformation(){
+    public String printData(){
         return toString() + " earns " + getPaymentAmount() + " tenge.";
     }
 }
