@@ -40,7 +40,7 @@ public class Main {
     static void printInformation(Iterable<Person> persons){
 
         for (Person person : persons){
-            System.out.println(person.printData());
+            System.out.println(person.printInformation());
         }
     }
 }
