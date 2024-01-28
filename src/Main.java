@@ -37,10 +37,10 @@ public class Main {
         printInformation(persons);
     }
 
-    static void printInformation(Iterable<Person> persons){
+    static void printData(Iterable<Person> persons){
 
         for (Person person : persons){
-            System.out.println(person.printInformation());
+            System.out.println(person.printData());
         }
     }
 }
