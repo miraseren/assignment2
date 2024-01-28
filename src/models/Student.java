@@ -1,44 +1,20 @@
 package models;
 
 public class Student extends Person {
-    double gpa;
+    private double gpa;
 
-    public Student(){
+    public Student() {
         super();
         gpa = 0;
     }
-    public Student(String name, String surname, double gpa){
+
+    public Student(String name, String surname, double gpa) {
         super(name, surname);
         this.gpa = gpa;
     }
 
-    @Override
-    public String getSurname() {
-        return super.getSurname();
-    }
-
-    @Override
-    public int getId() {
-        return super.getId();
-    }
-
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
     public double getGpa() {
         return gpa;
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
-
-    @Override
-    public void setSurname(String surname) {
-        super.setSurname(surname);
     }
 
     public void setGpa(double gpa) {
@@ -54,7 +30,6 @@ public class Student extends Person {
     public String getPosition() {
         return "Student";
     }
-
     @Override
     public double getPaymentAmount() {
         return gpa > 2.67 ? 36660.0 : 0;
