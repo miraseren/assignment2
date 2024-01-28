@@ -9,32 +9,32 @@ import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
-        Person m1 = new Employee("Miras", "Yeren", "Lawyer", 19000);
-        Person m2 = new Employee("Ilyas", "Zhaksybayev", "Manager", 360);
-        Person m3 = new Employee("Olzhas", "Karabekov", "Jugde", 1000000);
-        Person m4 = new Employee("Dias", "Altynov", "Programmer", 14200);
-        Person m5 = new Employee("Nurasyl", "Khurmet", "Armwrestler", 777777);
+        Person person1 = new Employee("Miras", "Yeren", "Lawyer", 192000);
+        Person person2 = new Employee("Ilyas", "Zhaksybayev", "Manager", 918000);
+        Person person3 = new Employee("Olzhas", "Karabekov", "Jugde", 518000);
+        Person person4 = new Employee("Dias", "Altynov", "Programmer", 14200000);
+        Person person5 = new Employee("Nurasyl", "Khurmet", "Armwrestler", 700000);
 
-        Person p1 = new Student("Kazakh", "Messi", 1.17);
-        Person p2 = new Student("Russian", "Mbappe", 0.21);
-        Person p3 = new Student("Patrick", "Bob", 3.05);
-        Person p4 = new Student("Alken", "Zaiyr", 2.00);
-        Person p5 = new Student("Bekzhan", "Chan", 3.23);
+        Person person6 = new Student("Kazakh", "Messi", 1.17);
+        Person person7 = new Student("Russian", "Mbappe", 4.00);
+        Person person8 = new Student("Patrick", "Bob", 3.27);
+        Person person9 = new Student("Alken", "Zaiyr", 2.98);
+        Person person10 = new Student("Bekzhan", "Chan", 2.13);
 
         ArrayList<Person> persons = new ArrayList<>();
-        persons.add(m1);
-        persons.add(m2);
-        persons.add(m3);
-        persons.add(m4);
-        persons.add(m5);
-        persons.add(p1);
-        persons.add(p2);
-        persons.add(p3);
-        persons.add(p4);
-        persons.add(p5);
+        persons.add(person1);
+        persons.add(person2);
+        persons.add(person3);
+        persons.add(person4);
+        persons.add(person5);
+        persons.add(person6);
+        persons.add(person7);
+        persons.add(person8);
+        persons.add(person9);
+        persons.add(person10);
 
         Collections.sort(persons);
-        printDatapersons);
+        printData(persons);
     }
 
     static void printData(Iterable<Person> persons){
