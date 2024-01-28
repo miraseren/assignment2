@@ -19,7 +19,7 @@ public class Main {
         Person p2 = new Student("Russian", "Mbappe", 0.21);
         Person p3 = new Student("Patrick", "Bob", 3.05);
         Person p4 = new Student("Alken", "Zaiyr", 2.00);
-        Person p5 = new Student("Bekzhan", "Chan", 3.83);
+        Person p5 = new Student("Bekzhan", "Chan", 3.23);
 
         ArrayList<Person> persons = new ArrayList<>();
         persons.add(m1);
