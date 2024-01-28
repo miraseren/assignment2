@@ -34,7 +34,7 @@ public class Main {
         persons.add(p5);
 
         Collections.sort(persons);
-        printInformation(persons);
+        printDatapersons);
     }
 
     static void printData(Iterable<Person> persons){
