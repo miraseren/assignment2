@@ -2,18 +2,18 @@ package models;
 
 import interfaces.Payable;
 
-public abstract class Person implements Payable, Comparable<Person>{
-    static int idCounter = 1;
-    int id;
-    String name, surname;
+public abstract class Person implements Payable, Comparable<Person> {
+    private static int idCounter = 1;
+    private int id;
+    private String name = "Name";
+    private String surname = "Surname";
 
-    public Person(){
-        id = idCounter++;
-        name = "Name";
-        surname = "Surname";
+    public Person() {
+        this("Name", "Surname");
     }
-    public Person(String name, String surname){
-        id = idCounter++;
+
+    public Person(String name, String surname) {
+        this.id = idCounter++;
         this.name = name;
         this.surname = surname;
     }
@@ -21,16 +21,20 @@ public abstract class Person implements Payable, Comparable<Person>{
     public void setName(String name) {
         this.name = name;
     }
-    public void setSurname(String surname){
+
+    public void setSurname(String surname) {
         this.surname = surname;
     }
-    public int getId(){
+
+    public int getId() {
         return id;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getSurname(){
+
+    public String getSurname() {
         return surname;
     }
 
